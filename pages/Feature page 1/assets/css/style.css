@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+.logo {
+    height: 25%;
+    width: 30%;
+}
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s forwards;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero-section {
+    background: url('https://images4.alphacoders.com/600/600528.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: #ffcc00;
+    opacity: 0;
+    animation: fadeInUp 1s 0.5s forwards;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeInUp 1s 1s forwards;
+}
+
+.hero-section .cta-button {
+    background: #ffcc00;
+    color: #000;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s 1.5s forwards;
+}
+
+.hero-section .cta-button:hover {
+    background: #ff9900;
+}
+
+.featured-news {
+    padding: 50px 20px;
+    background: url('https://images3.alphacoders.com/129/1291921.jpg') no-repeat center center/cover;
+}
+
+.featured-news h2 {
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: "Beaufort for LOL", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    color: #ff9900;
+}
+
+.news-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-grid article {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.news-grid article:hover {
+    transform: scale(1.05);
+}
+
+.news-grid img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.news-grid h3 {
+    margin-top: 10px;
+    color: #ffcc00;
+}
+
+.champions {
+    padding: 50px 20px;
+    background: #0d0d0d;
+}
+.champions h1 {
+    font-family: Spiegel, sans-serif;
+    word-break: break-word;
+    font-size: 22px;
+    line-height: 15px;
+    color: #ff9900;
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: center;
+}
+.champions h2 {
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: "Beaufort for LOL", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 80px;
+    color: #ffcc00;
+    display: flex;
+    justify-content: center;
+}
+.champions p {
+    font-family: Spiegel, sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffcc00;
+}
+.champion-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.champion {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.champion:hover {
+    transform: scale(1.05);
+}
+
+.champion img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.champion h3 {
+    margin-top: 10px;
+    color: #ffcc00;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3em;
+    }
+
+    .hero-section p {
+        font-size: 1.2em;
+    }
+
+    .news-grid, .champion-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e;
+    color: #e5e5e5;
+}
+
+.footer-content {
+    padding: 20px;
+    background-color: #2e2e30;
+    text-align: center;
+}
+.Logo {
+    height: 10%;
+    width: 10%;
+}
+.links a, .legal-links a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.links a:hover, .legal-links a:hover {
+    color: #00bfff;
+}
+
+.social-links a {
+    color: #e5e5e5;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #00bfff;
+    transform: scale(1.2);
+}
+
+.legal p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.legal-links {
+    margin: 10px 0;
+}
+
+.esrb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.esrb img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.esrb p {
+    font-size: 12px;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.footer-content {
+    animation: fadeIn 1s ease-in-out;
+}
